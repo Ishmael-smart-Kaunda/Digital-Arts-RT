@@ -1,8 +1,16 @@
+
+import Navigation from "./components/home page/Nav.jsx"
+import Header from "./components/home page/Header.jsx"
+import ActionCall from "./components/home page/ActionCall.jsx"
+
+
 import Courses from "./components/home page/Courses"
 import courseData from './data/Coursesdata.js'
 import Showcase from "./components/home page/Showcase.jsx"
 import Showcasedata from "./data/Showcasedata.js"
 import Footer from "./components/home page/Footer.jsx"
+
+
 
 function Home() {
   
@@ -23,6 +31,12 @@ function Home() {
 
   return (
     <>
+        {/* Navigation */}
+      <Navigation/>
+
+       {/*Header */}
+       <Header/>
+
 
       {/* Courses Section */}
       <section id="courses" class="max-w-6xl mx-auto px-5 py-16">
@@ -50,7 +64,7 @@ function Home() {
           </div>
         </div>
       </section>
-
+      <ActionCall/>
       <Footer />
       
     </>

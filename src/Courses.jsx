@@ -1,3 +1,10 @@
+
+import Navigation from "./components/home page/Nav"
+import CoursesHeader from "./courses header"
+import FAQ from "./components/courses page/FAQ"
+import CoursesActionCall from "./components/courses page/CallToAction"
+
+
 import Quickfacts from "./components/courses page/Quickfacts"
 import Coursetrack from "./components/courses page/Coursetrack"
 import Data from './data/Trackdata'
@@ -18,7 +25,12 @@ export default function Courses() {
     })
 
     return (
-        <>
+        <>   
+            {/*Navigation */}
+            <Navigation/>
+
+            {/*Header */}
+            <CoursesHeader/>
             <Quickfacts />
             <section id="tracks" class="max-w-6xl mx-auto px-6 pb-6">
                 <div class="flex items-center justify-between mb-6">
@@ -36,6 +48,11 @@ export default function Courses() {
             </section>
 
             <Deliverables />
+
+            {/**FAQ */}
+            <FAQ/>
+
+            <CoursesActionCall/>
         </>
     )
 }

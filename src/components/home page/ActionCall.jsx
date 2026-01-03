@@ -3,7 +3,7 @@
 function ActionCall(){
 
     return(
-             <section className='bg-slate-900 w-full mx-auto px-5 py-12'>
+             <section className='w-full mx-auto px-5 py-12'>
                 <div className='bg-gradient-to-r from-green-400 to-red-500 rounded-xl text-white p-8 flex flex-col md:flex-row items-center justify-between gap-6'>
                 <div>
                     <h3 className="text-2xl font-bold">Join the Founders & Mentors</h3>

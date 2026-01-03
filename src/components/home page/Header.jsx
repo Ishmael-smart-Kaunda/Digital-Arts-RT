@@ -68,7 +68,7 @@ function Hhero(){
               </a>
               <a href="contact.html" className="inline-flex items-center gap-2 px-5 py-3 rounded-md border border-white/30 text-white/90 backdrop-blur-sm">
                 Join a Workshop
-              </a>
+              </a>text-sm text-slate-400 mt-2
             </div>
 
             <div className="max-w-md bg-white/10 p-4 rounded-md backdrop-blur-sm inline-block mx-auto md:mx-0">
@@ -85,15 +85,15 @@ function SignUpForm(){
      return(
         <>
            
-        <aside className="basis-5/12  text-white/90  w-9.5/10 h-7/10 md:w-1/2 mx-auto">
-            <div className="bg-gray-800  rounded-xl shadow-xl p-5 mt-2 md:mt-0 ">
-              <h3 className="text-lg font-semibold text-white/90">Sign up for the first cohort</h3>
+        <aside className="basis-5/12  text-slate/90  w-9.5/10 h-7/10 md:w-1/2 mx-auto">
+            <div className="bg-white  rounded-xl shadow-xl p-5 mt-2 md:mt-0 ">
+              <h3 className="text-lg font-semibold text-slate-700">Sign up for the first cohort</h3>
               <p className="text-sm text-slate-400 mt-2">Limited seats. <span className="font-bold text-green-600 text-base">FREE</span> / low-cost pilot workshops in 2026.</p>
 
               <form id="signup-form" className="mt-4 space-y-3 ">
-                <input type="text" name="name" placeholder="Your full name"  required className="w-full px-3 py-2 rounded-md bg-slate-900 outline-none focus:border-slate-500 focus:ring-2 focus:ring-slate-500/50"/>
-                <input type="email" name="email" placeholder="Email address" required className="w-full px-3 py-2 rounded-md bg-slate-900 outline-none focus:border-slate-500 focus:ring-2 focus:ring-slate-500/50"/>
-                <select name="interest" className="w-full px-3 py-2 rounded-md  bg-slate-900 outline-none focus:border-slate-500 focus:ring-2 focus:ring-slate-500/50">
+                <input type="text" name="name" placeholder="Your full name"  required className="w-full px-3 py-2 rounded-md border"/>
+                <input type="email" name="email" placeholder="Email address" required className="w-full px-3 py-2 rounded-md border"/>
+                <select name="interest" className="w-full px-3 py-2 rounded-md border">
                   <option value="">I'm interested in...</option>
                   <option>Digital drawing</option>
                   <option>3D modelling (Blender)</option>

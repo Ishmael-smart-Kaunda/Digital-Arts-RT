@@ -4,7 +4,6 @@ import CoursesHeader from "./courses header"
 import FAQ from "./components/courses page/FAQ"
 import CoursesActionCall from "./components/courses page/CallToAction"
 
-
 import Quickfacts from "./components/courses page/Quickfacts"
 import Coursetrack from "./components/courses page/Coursetrack"
 import Data from './data/Trackdata'

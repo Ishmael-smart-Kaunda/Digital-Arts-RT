@@ -17,11 +17,11 @@ export default function Deliverables() {
                 </div>
             </div>
 
-            <div class="p-6 bg-slate-900 text-white rounded-2xl shadow-lg border border-slate-800">
+            <div class="p-6 bg-slate-400 text-white rounded-2xl shadow-lg border border-slate-800">
                 <p class="text-sm text-amber-300 font-semibold uppercase">Deliverables</p>
                 <h3 class="text-xl font-bold mt-1">What you leave with</h3>
                 <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
-                <div class="p-3 rounded-lg bg-white/5 border border-white/10">1 polished portfolio piece</div>
+                <div class="p-3 rounded-lg bg-slate/5 border border-white/10">1 polished portfolio piece</div>
                 <div class="p-3 rounded-lg bg-white/5 border border-white/10">Process breakdown PDF</div>
                 <div class="p-3 rounded-lg bg-white/5 border border-white/10">Feedback notes from mentors</div>
                 <div class="p-3 rounded-lg bg-white/5 border border-white/10">Community & accountability buddies</div>

@@ -10,7 +10,7 @@ const links=[
 
 
 
-function Navigation({onPageChange}){
+function Navigation(){
 
   const pages=[
        {name:'home'},
@@ -22,7 +22,7 @@ function Navigation({onPageChange}){
   
 
   const pageNames =pages.map((page)=>( <li key={page.name} className="list-none  py-0.45"> 
-                                       <button onClick={()=>onPageChange(page.name)} >{page.name} </button></li> 
+                                       <button >{page.name} </button></li> 
                   ))
 
     
@@ -50,7 +50,7 @@ function Navigation({onPageChange}){
             {/*Menu button for Mobile  */} 
 
              <div className='md:hidden '>
-              <button onClick={()=>setOpen(!open)} className=" toggle-btn border-white bg-blue">
+              <button onClick={()=>setOpen(!open)} className=" toggle-btn border-white bg-blue ">
                 {open ? closeMenu: openMenu}
               </button>
              </div>

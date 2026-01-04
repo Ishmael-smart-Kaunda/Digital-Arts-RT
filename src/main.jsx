@@ -7,10 +7,10 @@ import Team from './Team.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   {/* <Home /> */}
+     <Home /> 
     <h1>Dont worry we'll fix this</h1>
     <Courses /> 
     <h1> This too or two?</h1>
-    {/*<Team />*/}
+     <Team />
  </StrictMode>
 )

@@ -7,8 +7,8 @@ export default   function FAQ(){
 
        return(
               <>
-                 <section class="bg-slate-900 max-w-6x w-full mx-auto px-6 pb-12">
-                     <div class="bg-slate-800 rounded-2xl shadow card-shadow border border-slate-500 p-6">
+                 <section class=" max-w-6x w-full mx-auto px-6 pb-12">
+                     <div class="bg-white rounded-2xl shadow card-shadow border border-slate-500 p-6">
                        <div class="flex items-center justify-between flex-wrap gap-3">
                          <div>
                             <p class="text-sm text-indigo-600 font-semibold uppercase">FAQ</p>

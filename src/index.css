@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+.toggle-btn{
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 3px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    margin-left: 5px;
+}

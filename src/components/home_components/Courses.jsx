@@ -1,4 +1,3 @@
-import image from './DigitalArt.jpeg'
 
 export default function Courses({data}) {
     return (

@@ -1,6 +1,7 @@
 
 
-function ActionCall(){
+
+export default function ActionCall(){
 
     return(
              <section className='w-full mx-auto px-5 py-12'>
@@ -18,4 +19,3 @@ function ActionCall(){
     )
 }
 
-export default ActionCall

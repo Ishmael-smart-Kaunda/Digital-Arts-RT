@@ -1,17 +1,15 @@
-
-import Navigation from "./components/home page/Nav"
-import CoursesHeader from "./courses header"
-import FAQ from "./components/courses page/FAQ"
-import CoursesActionCall from "./components/courses page/CallToAction"
-
-import Quickfacts from "./components/courses page/Quickfacts"
-import Coursetrack from "./components/courses page/Coursetrack"
-import Data from './data/Trackdata'
-import Deliverables from "./components/courses page/Deliverables"
+import Coursetrack from "../components/courses_components/Coursetrack"
+import Coursetrackdata from "../data/Trackdata"
+import Quickfacts from "../components/courses_components/Quickfacts"
+import Deliverables from "../components/courses_components/Deliverables"
+import FAQ from "../components/courses_components/FAQ"
+import CoursesActionCall from "../components/courses_components/CTA"
+import Hero from "../components/courses_components/Hero"
+import Footer from "../components/Footer"
 
 export default function Courses() {
 
-    const courseTracks = Data.map(track => {
+    const courseTracks = Coursetrackdata.map(track => {
         return <Coursetrack 
             key={track.id}
             courseImg = {track.courseImg}
@@ -24,13 +22,11 @@ export default function Courses() {
     })
 
     return (
-        <>   
-            {/*Navigation */}
-            <Navigation/>
+        <>
+            <Hero />
 
-            {/*Header */}
-            <CoursesHeader/>
             <Quickfacts />
+
             <section id="tracks" class="max-w-6xl mx-auto px-6 pb-6">
                 <div class="flex items-center justify-between mb-6">
                     <div>
@@ -48,10 +44,11 @@ export default function Courses() {
 
             <Deliverables />
 
-            {/**FAQ */}
-            <FAQ/>
+            <FAQ />
 
-            <CoursesActionCall/>
+            <CoursesActionCall />
+
+            <Footer />
         </>
     )
 }

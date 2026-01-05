@@ -1,5 +1,8 @@
 
 
+
+
+
 export default function Deliverables() {
     return(
         <section class="max-w-6xl mx-auto px-6 py-10 grid lg:grid-cols-2 gap-8">

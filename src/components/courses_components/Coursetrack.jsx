@@ -1,5 +1,7 @@
 
 
+
+
 export default function Coursetrack({badges, courseImg, title, description, takeAways, tools}) {
     return (
         <article id="drawing" class="course-card bg-white rounded-xl shadow hover:shadow-lg transition p-5 border border-slate-100">

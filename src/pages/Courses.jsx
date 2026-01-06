@@ -2,13 +2,23 @@ import Coursetrack from "../components/courses_components/Coursetrack"
 import Coursetrackdata from "../data/Trackdata"
 import Quickfacts from "../components/courses_components/Quickfacts"
 import Deliverables from "../components/courses_components/Deliverables"
-import FAQ from "../components/courses_components/FAQ"
+
 import CoursesActionCall from "../components/courses_components/CTA"
 import Hero from "../components/courses_components/Hero"
 import Footer from "../components/Footer"
 
-export default function Courses() {
 
+{/*import Questions from "../components/courses_components/commonQuestions.jsx"
+import FAQdata from './data/FAQdata.js'*/}
+
+
+
+
+export default function Courses() {
+    {/*const commonQuestions= FAQdata.map(question=>{
+        return<Questions key={question.id} data={data}/>
+    })
+   */}
     const courseTracks = Coursetrackdata.map(track => {
         return <Coursetrack 
             key={track.id}
@@ -44,8 +54,8 @@ export default function Courses() {
 
             <Deliverables />
 
-            <FAQ />
-
+           
+           
             <CoursesActionCall />
 
             <Footer />

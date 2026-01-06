@@ -1,41 +1,13 @@
-
+import headerData from "../../data/headerData";
 import { useState } from "react";
-function Header(){
-
-        const slideImages=[ 
-                            'src/assets/images/DigitalArt.jpg',
-                            'src/assets/images/student3.jpg',
-                            'src/assets/images/tablet.jpeg'
-                          ]
-         let imgSrc='src/assets/images/student3.jpg'
-
-         const[slideImage, setSlideImage] =useState('src/assets/images/student3.jpg')
-
-                        for(let i=0; i<slideImages.length;i++){
-                           
-                            setInterval(() => {
-                                setSlideImage(slideImages[i])
-                                imgSrc=slideImage
-                            }, 5000);
-                            
-                        }
-        {/* let i=0
-          slideImages.forEach((source, i)=>{
-              setInterval(()=>{
-                 imgSrc=slideImages[i]
-                 i=(i+1)% slideImages.length
-        
-              }, 1000)
-          })
-        */}
-        
+export default function Header(){
 
         return(
               <>
                 <div className="relative isolate bg-gradient-to-b from-black/30 to-white/20 w-full min-h-[95vh] md:min-h-[80vh] lg:min-h-[75vh]  pt-30 px-15 pb-5 ">
                      <img src='src/assets/images/Hero Images/DigitalArt.jpg' className="absolute inset-0 object-cover w-full h-full mix-blend-overlay "/>
                      <div className="relative flex flex-col gap-5 md:flex-row w-full md:pb-5">
-                         <Hhero/>
+                         <Hhero data={headerData}/>
                          <SignUpForm/>
                      </div>
                     
@@ -43,32 +15,32 @@ function Header(){
               </>
         )
 }
-export default Header
 
 
 
-function Hhero(){
+function Hhero({data}){
+     const homeHeaderObj=data[0]
      return(
         <>
             <div className="relative z-10 text-white basis-7/12 text-white md:text-left text-center space-y-4">
                 <h2 className="text-3xl text-white md:text-5xl font-extrabold ">
-                    Digital Arts Academy <span className="text-amber-300">MW</span>
+                    {homeHeaderObj.orgName}<span className="text-amber-300">{homeHeaderObj.Logo}</span>
                 </h2>
     
             <p className="text-lg md:text-xl max-w-xl drop-shadow mx-auto md:mx-0">
-              Empowering Malawian creatives with skills in 
-               <strong>digital drawing</strong>, 
-               <strong>3D modelling</strong>, and 
-               <strong>game development</strong>.
+              {homeHeaderObj.courseDescript} 
+               <strong>{homeHeaderObj.drawing}</strong>, 
+               <strong>{homeHeaderObj.modelling}</strong>, and 
+               <strong>{homeHeaderObj.game}</strong>.
             </p>
 
              <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
               <a href="#courses" className="inline-flex items-center gap-2 px-5 py-3 rounded-md bg-indigo-600 hover:bg-indigo-700 text-white shadow-lg">
-                Explore Courses
+                {homeHeaderObj.buttons.exploreBtn}
               </a>
               <a href="contact.html" className="inline-flex items-center gap-2 px-5 py-3 rounded-md border border-white/30 text-white/90 backdrop-blur-sm">
-                Join a Workshop
-              </a>text-sm text-slate-400 mt-2
+                {homeHeaderObj.buttons.joinBtn}
+              </a>
             </div>
 
             <div className="max-w-md bg-white/10 p-4 rounded-md backdrop-blur-sm inline-block mx-auto md:mx-0">

@@ -5,7 +5,6 @@ import Deliverables from "../components/courses_components/Deliverables"
 
 import CoursesActionCall from "../components/courses_components/CTA"
 
-import CommonQuestions from "../components/courses_components/FAQ"
 import Hero from "../components/courses_components/Hero"
 import Footer from "../components/Footer"
 
@@ -57,7 +56,7 @@ export default function Courses() {
             <Deliverables />
 
            
-           <CommonQuestions/>
+            
             <CoursesActionCall />
 
             <Footer />

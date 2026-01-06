@@ -5,6 +5,7 @@ import Showcasedata from '../data/Showcasedata.js'
 import Footer from '../components/Footer.jsx'
 import ActionCall from '../components/home_components/CTA.jsx'
 
+import Header from '../components/home_components/Header.jsx'
 export default function Home() {
 
     const courseDetails = courseData.map(data => {
@@ -23,7 +24,8 @@ export default function Home() {
 
 
     return (
-        <>
+        <>  
+            <Header/>
             <section id="courses" class="max-w-6xl mx-auto px-5 py-16">
                 <div class="flex items-center justify-between mb-8">
                 <h3 class="text-2xl font-bold">Core Courses</h3>

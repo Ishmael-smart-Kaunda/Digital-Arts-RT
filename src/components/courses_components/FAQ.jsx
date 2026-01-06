@@ -1,7 +1,9 @@
+
+
 import Questions from "../components/courses_components/commonQuestion"
 import questionsData from './data/FAQdata.js'
 
-export default function CommonQuestions(){
+export default function FAQ(){
        const commonQuestions=questionsData.map(question=>{
              return<Questions key={question.id} data={question.data}/>
        })

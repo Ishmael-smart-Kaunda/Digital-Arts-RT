@@ -1,18 +1,12 @@
+import Header from "../components/Header"
+import headerData from "../data/headerData"
 import Coursetrack from "../components/courses_components/Coursetrack"
 import Coursetrackdata from "../data/Trackdata"
 import Quickfacts from "../components/courses_components/Quickfacts"
 import Deliverables from "../components/courses_components/Deliverables"
 
-import CoursesActionCall from "../components/courses_components/CTA"
-
-import Hero from "../components/courses_components/Hero"
+import CallAction from "../components/CallAction"
 import Footer from "../components/Footer"
-
-
-{/*import Questions from "../components/courses_components/commonQuestions.jsx"
-import FAQdata from './data/FAQdata.js'*/}
-
-
 
 
 export default function Courses() {
@@ -34,7 +28,7 @@ export default function Courses() {
 
     return (
         <>
-            <Hero />
+            <Header pageNmae='course' data={headerData} />
 
             <Quickfacts />
 
@@ -55,9 +49,8 @@ export default function Courses() {
 
             <Deliverables />
 
-           
             
-            <CoursesActionCall />
+            <CallAction pageName='course' />
 
             <Footer />
         </>

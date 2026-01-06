@@ -3,9 +3,12 @@ import Courses from '../components/home_components/Courses'
 import Showcase from '../components/home_components/Showcase.jsx'
 import Showcasedata from '../data/Showcasedata.js'
 import Footer from '../components/Footer.jsx'
-import ActionCall from '../components/home_components/CTA.jsx'
 
-import Header from '../components/home_components/Header.jsx'
+
+import CallAction from '../components/CallAction.jsx'
+
+import Header from '../components/Header.jsx'
+import headerData from '../data/headerData.js'
 export default function Home() {
 
     const courseDetails = courseData.map(data => {
@@ -25,7 +28,7 @@ export default function Home() {
 
     return (
         <>  
-            <Header/>
+            <Header pageNmae='home' data={headerData}/>
             <section id="courses" class="max-w-6xl mx-auto px-5 py-16">
                 <div class="flex items-center justify-between mb-8">
                 <h3 class="text-2xl font-bold">Core Courses</h3>
@@ -51,7 +54,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <ActionCall />
+            <CallAction pageName='home' />
 
             <Footer />
         </>

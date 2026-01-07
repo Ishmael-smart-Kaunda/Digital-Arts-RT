@@ -15,7 +15,7 @@ export default function Header({pageNmae, data}){
      let imgSrc=slideImgs[index].src
      let imgAlt=slideImgs[index].alt
 
-
+     const slideDots =slideImgs.map((dot, i)=>{return <span className={`dot ${i===index ? 'border border-white border-2': ''} `}></span>})
      {/*next index */}
      function getNextIndex(prevIndex){
          return(prevIndex+1)%slideImgs.length
@@ -23,7 +23,7 @@ export default function Header({pageNmae, data}){
 
      {/* next images */}
      function handleNext(){
-         setIndex(getNextIndex)
+         setIndex(getNextIndex)      
      }
      //to be added if needed
      function handlePrev(){
@@ -66,8 +66,10 @@ export default function Header({pageNmae, data}){
                       <p className="text-sm text-amber-100 italic mt-1">"I can do all things through Christ..." — <strong>Philippians 4:13</strong></p>
                     </div>
                   </div>
+
                   <SignUpForm/>
                 </div>
+                <div className="absolute bottom-[10px] left-1/2 -translate-x-1/2 flex flex-row gap-1 items-center ">{slideDots}</div>
              </div>
            )
            }

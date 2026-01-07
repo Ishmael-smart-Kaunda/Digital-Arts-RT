@@ -25,9 +25,6 @@ export default[
                     },
                     {src: 'public/images/Hero Images/student3.jpg',
                      alt:'student 3'
-                    },
-                    {src: 'public/images/Hero Images/students.jpg',
-                     alt:'students'
                     }
                   ]
                },

@@ -3,7 +3,16 @@ import Logo from "../assets/Logo.png"
 import { useState } from "react";
 
 export default function Navbar() {
-
+    const NavLinks=[
+        {id:1, linkName:"Home", linkTo: "/"},
+        {id:2, linkName:"Courses", linkTo: "/Courses"},
+        {id:3, linkName:"Team", linkTo: "/Team"},
+        {id:4, linkName:"Contact", linkTo: "/Contact"}
+    ]
+    const Links=NavLinks.map(link => <Link key={link.id} to={link.linkTo}>
+                                      <a onClick={()=>setOpen(false)} className="text-sm hover:text-indigo-600" >{link.linkName}</a>
+                                    </Link>
+                              )
     const [open, setOpen]=useState(false)
     return(
             <>
@@ -16,37 +25,16 @@ export default function Navbar() {
                             <p className="text-xs text-slate-500 -mt-1">Create • Learn • Shine</p>
                             </div>
                         </a>
-
+                        {/* Navigation on wider screen */}
                         <nav className="hidden md:flex items-center gap-4">
-                            <Link to="/">
-                                <a className="text-sm hover:text-indigo-600">Home</a>
-                            </Link>
-                            <Link to="/Courses">
-                                <a className="text-sm hover:text-indigo-600">Courses</a>
-                            </Link>
-                            <Link to="/Team">
-                                <a className="text-sm hover:text-indigo-600">Team</a>
-                            </Link>
-                            <Link to="/Contact">
-                                <a className="text-sm hover:text-indigo-600">Contact</a>
-                            </Link>
+                              {Links}
                         </nav>
 
+                        {/* navigation menu for mobile devices */}
                         {open && (
                             <nav className="md:hidden flex flex-col items-center gap-4 absolute top-15 left-0 transition px-5 py-4 space-y-2 bg-white/60 backdrop-blur-sm shadow-sm w-full">
-                            <Link to="/">
-                                <a className="text-sm hover:text-indigo-600">Home</a>
-                            </Link>
-                            <Link to="/Courses">
-                                <a className="text-sm hover:text-indigo-600">Courses</a>
-                            </Link>
-                            <Link to="/Team">
-                                <a className="text-sm hover:text-indigo-600">Team</a>
-                            </Link>
-                            <Link to="/Contact">
-                                <a className="text-sm hover:text-indigo-600">Contact</a>
-                            </Link>
-                        </nav>
+                              {Links}
+                            </nav>
                           )
                         }
 

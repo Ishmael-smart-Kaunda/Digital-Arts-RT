@@ -29,10 +29,10 @@ export default function Home() {
     return (
         <>  
             <Header pageNmae='home' data={headerData}/>
-            <section id="courses" class="max-w-6xl mx-auto px-5 py-16">
-                <div class="flex items-center justify-between mb-8">
-                <h3 class="text-2xl font-bold">Core Courses</h3>
-                <a href="courses.html" class="text-indigo-600 hover:underline">View all courses →</a>
+            <section id="courses" className="max-w-6xl mx-auto px-5 py-16">
+                <div className="flex items-center justify-between mb-8">
+                <h3 className="text-2xl font-bold">Core Courses</h3>
+                <a href="courses.html" className="text-indigo-600 hover:underline">View all courses →</a>
                 </div>
         
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -41,14 +41,14 @@ export default function Home() {
             </section>
 
 
-            <section id="showcase" class="bg-slate-50 py-16">
-                <div class="max-w-6xl mx-auto px-5">
-                <div class="flex items-center justify-between mb-8">
-                    <h3 class="text-2xl font-bold">Student Showcase</h3>
+            <section id="showcase" className="bg-slate-50 py-16">
+                <div className="max-w-6xl mx-auto px-5">
+                <div className="flex items-center justify-between mb-8">
+                    <h3 className="text-2xl font-bold">Student Showcase</h3>
                     <a href="#" class="text-indigo-600">Submit your work</a>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {showCases}
                 </div>
                 </div>

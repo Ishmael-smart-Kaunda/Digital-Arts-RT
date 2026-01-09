@@ -13,7 +13,7 @@ export default [
         heading:"Join the first Digital Arts Academy cohort",
         descript:"Tell us which track you want, and we’ll reserve your spot.",
         buttons:{
-            seatReserveBtn:'Reserve my seat',
+            seatReserveBtn:'Reserve seat',
             backHomeBtn:'Back to home',
         }
        }

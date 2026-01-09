@@ -38,8 +38,8 @@ export default function Header({pageNmae, data}){
 
     if(pageNmae==='home'){
          return(
-          <div className="relative isolate bg-gradient-to-b from-black/30 to-white/20 w-full min-h-[95vh] md:min-h-[80vh] lg:min-h-[75vh] ">
-              <img src={imgSrc} alt={imgAlt} className="absolute inset-0 object-cover w-full h-full mix-blend-overlay "/>
+          <div className="relative isolate bg-gradient-to-b from-black/30 to-white/20 w-full min-h-[95vh] md:min-h-[80vh] lg:min-h-[75vh] mt-15">
+              <img src={imgSrc} alt={imgAlt} className="absolute inset-0 object-cover object-center mx-auto w-full h-full mix-blend-overlay "/>
                 <div className=" relative z-10 max-w-6xl mx-auto px-5 py-24 md:py-28 lg:py-32 flex flex-col md:flex-row md:items-center gap-10     ">
                   <div className="relative z-10 text-white basis-7/12 text-white md:text-left text-center space-y-4">
                         <h2 className="text-3xl text-white md:text-5xl font-extrabold ">

@@ -4,12 +4,11 @@
 
 export default function ContactForm(){
 
-     return(
-             
+     return(      
               <main className="max-w-6xl bg-slate mx-auto px-6 py-12 pt-24">
 
                  <h1 className="text-3xl font-bold mb-6">Contact & Apply</h1>
-                 <p classname="text-slate-600 mb-6">Use the form to register interest in teaching, mentoring, or joining the first cohort.</p>
+                 <p className="text-slate-600 mb-6 w-auto py-10 text-xl">Use the form to register interest in teaching, mentoring, or joining the first cohort.</p>
 
                  <form id="contact-form" class="grid grid-cols-1 md:grid-cols-2 gap-4">
                  <input name="name" placeholder="Full name" className="p-3 border rounded-md"/>

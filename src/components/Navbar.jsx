@@ -12,7 +12,7 @@ export default function Navbar() {
     const Links=NavLinks.map(link => <Link key={link.id} to={link.linkTo}>
                                       <a onClick={()=>setOpen(false)} className="text-sm hover:text-indigo-600" >{link.linkName}</a>
                                     </Link>
-                              )
+                            )
     const [open, setOpen]=useState(false)
     return(
             <>

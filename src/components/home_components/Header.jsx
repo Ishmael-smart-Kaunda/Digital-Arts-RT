@@ -71,7 +71,7 @@ function Hhero(){
               </a>text-sm text-slate-400 mt-2
             </div>
 
-            <div className="max-w-md bg-white/10 p-4 rounded-md backdrop-blur-sm inline-block mx-auto md:mx-0">
+            <div className="max-w-md p-4 rounded-md backdrop-blur-sm inline-block mx-auto md:mx-0">
               <p className="text-sm text-amber-100 italic">"Write the vision and make it plain..." — <strong>Habakkuk 2:2</strong></p>
               <p className="text-sm text-amber-100 italic mt-1">"I can do all things through Christ..." — <strong>Philippians 4:13</strong></p>
             </div>

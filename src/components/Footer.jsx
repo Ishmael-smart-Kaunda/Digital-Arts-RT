@@ -8,39 +8,43 @@ export default function () {
                 <h4 class="font-bold">Digital Arts Academy MW</h4>
                 <p class="mt-2 text-sm text-slate-300">Creating opportunities for Malawian creatives.</p>
                 <div class="mt-3 text-xs text-slate-400">Habakkuk 2:2 • Philippians 4:13</div>
-                </div>
-
-                <article >
+               
+                  <article className="mt-5 py-2" >
                     <h5 className="font-semibold">Follow Us</h5>
                     <div  className="mt-3 flex flex-row items-center gap-4">
                         <a href="https://web.facebook.com/profile.php?id=61586510541142" >
-                           <FaFacebook className="h-6 w-6 transition-colors hover:scale-110" />
+                           <FaFacebook className="h-[24px] w-[24px] transition-transform transition-transform duration-500 ease-in-out hover:scale-110" />
                         </a>
                        < a href="https://www.instagram.com/digitalartacademymw/">
-                           <FaInstagram className="h-6 w-6 transition-colors hover:scale-110" />
+                           <FaInstagram className="h-[24px] w-[24px] transition-transform transition-transform duration-500 ease-in-out hover:scale-110" />
                        </a>
                        <a href="https://www.tiktok.com/@digitalartsacademy.mw?lang=en">
-                        <SiTiktok className="h-5 w-5 transition-transform hover:scale-110"  />
+                        <SiTiktok className="h-[23px] w-[23px] transition-transform transition-transform duration-500 ease-in-out hover:scale-110"  />
                        </a>
                            
                         <a href="https://www.youtube.com/channel/UC-tcfLP7qf_sDgAmStUSjWw">
-                           <FaYoutube className="h-6 w-6 transition-colors hover:scale-110"  />
+                           <FaYoutube className="h-[25px] w-[25px] transition-transform duration-500 ease-in-out hover:scale-110"  />
                         </a>
                     </div>
                 </article>
+                </div>
+
+               
 
                 <div>
                 <h5 class="font-semibold">Quick links</h5>
                 <ul class="mt-3 text-sm text-slate-300 space-y-2">
-                    <li><a href="#courses">Courses</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li className="hover:text-indigo-300 transition-colors duration-100"><a href="#courses">Courses</a></li>
+                    <li className="hover:text-indigo-300 transition-colors duration-100" ><a href="team.html">Team</a></li>
+                    <li className="hover:text-indigo-300 transition-colors duration-100" ><a href="contact.html">Contact</a></li>
                 </ul>
                 </div>
 
                 <div>
                 <h5 class="font-semibold">Contact</h5>
                 <p class="mt-2 text-sm text-slate-300">Email: hello@digitalartsmw.example</p>
+                 
+                 
                 </div>
             </div>
 

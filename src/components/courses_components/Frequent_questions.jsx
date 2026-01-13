@@ -1,20 +1,19 @@
+import Questions from "./common_questions"
+import questionsData from "../../data/questions-data"
 
-
-import Questions from "../components/courses_components/commonQuestion"
-import questionsData from './data/FAQdata.js'
-
-export default function FAQ(){
+export default function FAQuestions(){
        const commonQuestions=questionsData.map(question=>{
-             return<Questions key={question.id} data={question.data}/>
-       })
-       return(
+                    return<Questions key={question.id} data={question}/>
+                    })
+    
+    return(
               <>
-                 <section className=" max-w-6x w-full mx-auto px-6 pb-12">
-                     <div className="bg-white rounded-2xl shadow card-shadow border border-slate-500 p-6">
+                 <section className=" max-w-6xl mx-auto px-6 pb-12">
+                     <div className="bg-bgPrimaryForm rounded-2xl shadow card-shadow border border-borderColor p-6 ">
                        <div className="flex items-center justify-between flex-wrap gap-3">
                          <div>
                             <p className="text-sm text-indigo-600 font-semibold uppercase">FAQ</p>
-                            <h3 className="text-2xl font-bold">Common questions</h3>
+                            <h3 className="text-2xl text-primaryText font-bold">Common questions</h3>
                          </div>
                             <a href="contact.html" className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-indigo-600 text-white text-sm hover:bg-indigo-700">Ask something else</a>
                        </div>
@@ -24,7 +23,6 @@ export default function FAQ(){
                      </div>
                   </div>
                 </section>
-              
               </>
        )
 }

@@ -13,7 +13,7 @@ export default function Banner({data}){
           </div>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-600">
             {
-                bannerData.map(data => <li key={data.id} class="p-3 rounded-lg bg-slate-50 border border-slate-100" >{data.reason}</li>)
+                bannerData.map(data => <li key={data.id} class="p-3 rounded-lg bg-bgSecondary text-primaryText border border-slate-100" >{data.reason}</li>)
             }
            
           </ul>

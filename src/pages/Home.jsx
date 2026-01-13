@@ -19,7 +19,7 @@ export default function Home() {
     })
 
     const showCases = Showcasedata.map(data => {
-        return <Showcase 
+        return <Showcase
         key={data.id}
         data = {data}
         />
@@ -27,36 +27,42 @@ export default function Home() {
 
 
     return (
-        <>  
+        <div className='bg-primary'>  
             <Header pageNmae='home' data={headerData}/>
-            <section id="courses" className="max-w-6xl mx-auto px-5 py-16">
-                <div className="flex items-center justify-between mb-8">
-                <h3 className="text-2xl font-bold">Core Courses</h3>
+
+            <section class="w-full px-5 py-12 bg-bgPrimary">
+             <div id="courses" className="max-w-6xl mx-auto px-5 bg-bgPrimary">
+                <div className="flex items-center justify-between mb-8 ">
+                <h3 className="text-2xl text-primaryText font-bold">Core Courses</h3>
                 <a href="courses.html" className="text-indigo-600 hover:underline">View all courses →</a>
                 </div>
         
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 ">
                 {courseDetails}
                 </div>
+              
+              </div>
             </section>
 
-
-            <section id="showcase" className="bg-slate-50 py-16">
+            <section id="showcase" className=" py-16 bg-bgSecondary">
                 <div className="max-w-6xl mx-auto px-5">
-                <div className="flex items-center justify-between mb-8">
-                    <h3 className="text-2xl font-bold">Student Showcase</h3>
+                 <div className="flex items-center justify-between mb-8">
+                    <h3 className="text-2xl font-bold text-primaryText">Student Showcase</h3>
                     <a href="#" class="text-indigo-600">Submit your work</a>
-                </div>
+                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {showCases}
-                </div>
+                 </div>
                 </div>
             </section>
-
-            <CallAction pageName='home' />
+             
+             <section class="w-full px-5 py-12 bg-bgPrimary">
+                 <CallAction pageName='home' />
+             </section>
+          
 
             <Footer />
-        </>
+        </div>
     )
 }

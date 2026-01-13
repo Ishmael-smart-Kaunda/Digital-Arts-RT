@@ -22,7 +22,7 @@ export default function CallAction({pageName}){
         )
     }
     return(
-           <section class="max-w-6xl mx-auto px-6 pb-14">
+               <section className='max-w-6xl mx-auto px-6 pb-14'>
                 <div class="rounded-2xl bg-gradient-to-r from-indigo-500 to-amber-400 text-white p-8 shadow-xl flex flex-col md:flex-row items-left md:items-center justify-between gap-6">
                     <div>
                       <p class="uppercase text-xs tracking-[0.2em] text-white/90">{courseActions.questionTag}</p>
@@ -34,6 +34,7 @@ export default function CallAction({pageName}){
                       <a href="index.html" class="px-5 py-3 whitespace-nowrap w-[155px] rounded-md border border-white/40 text-white/90 hover:bg-white/10">{courseActions.buttons.backHomeBtn}</a>
                     </div>
                 </div>
-          </section>
+              </section>
+        
     )
 }

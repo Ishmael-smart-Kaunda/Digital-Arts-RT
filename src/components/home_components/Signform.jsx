@@ -55,7 +55,7 @@ export default function Headerform() {
                 value={userCredentials.user_name}
                 onChange={handleChange}
                 required
-                className="w-full px-3 py-2 rounded-md border"
+                className="w-full px-3 py-2 rounded-md border border-inputBorder rounded-md placeholder: text-placeholder bg-bgSecondary focus:outline-none"
             />
             <input 
                 type="email"
@@ -64,7 +64,7 @@ export default function Headerform() {
                 value={userCredentials.email}
                 onChange={handleChange}
                 required 
-                className="w-full px-3 py-2 rounded-md border"
+                className="w-full px-3 py-2 rounded-md border border-inputBorder rounded-md placeholder: text-placeholder bg-bgSecondary focus:outline-none"
             />
           
             <select 
@@ -72,9 +72,9 @@ export default function Headerform() {
                 value={userCredentials.interest}
                 onChange={handleChange}
                 required
-                className="text-[1rem] w-full max-w-full overflow-hidden px-3 py-2 rounded-md border"
+                className="text-[1rem] w-full max-w-full overflow-hidden px-3 py-2 rounded-md border border-inputBorder rounded-md placeholder: text-placeholder bg-bgSecondary focus:outline-none"
             >
-                <option value="" className="text-[1rem] " >I'm interested in...</option>
+                <option value="" className="border border-inputBorder rounded-md placeholder: text-placeholder bg-bgSecondary focus:outline-none" >I'm interested in...</option>
                 <option className="">Digital drawing</option>
                 <option   >3D modelling (Blender)</option>
                 <option>Game dev (Godot/Unreal)</option>

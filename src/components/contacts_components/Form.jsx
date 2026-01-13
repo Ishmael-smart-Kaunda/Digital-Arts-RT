@@ -57,7 +57,7 @@ export default function Form() {
                 type="text"
                 name="user_name" 
                 placeholder="Full name" 
-                className="p-3 border rounded-md"
+                className="p-3 border rounded-md border-inputBorder rounded-md placeholder: text-placeholder bg-bgSecondary focus:outline-none"
                 value={userCredentials.user_name}
                 onChange={handleChange}
                 required
@@ -66,7 +66,7 @@ export default function Form() {
                 type="email"
                 name="email" 
                 placeholder="Email address" 
-                className="p-3 border rounded-md"
+                className="p-3 border rounded-md border-inputBorder rounded-md placeholder: text-placeholder bg-bgSecondary focus:outline-none"
                 value={userCredentials.email}
                 onChange={handleChange}
                 required
@@ -75,14 +75,14 @@ export default function Form() {
                 type="tel"
                 name="phone" 
                 placeholder="Phone" 
-                className="p-3 border rounded-md"
+                className="p-3 border rounded-md border-inputBorder rounded-md placeholder: text-placeholder bg-bgSecondary focus:outline-none"
                 value={userCredentials.phone}
                 onChange={handleChange}
                 required
             />
             <select 
                 name="interest" 
-                className="p-3 border rounded-md"
+                className="p-3 border rounded-md border-inputBorder rounded-md placeholder: text-placeholder bg-bgSecondary focus:outline-none"
                 value={userCredentials.interest}
                 onChange={handleChange}
                 required
@@ -95,14 +95,14 @@ export default function Form() {
             <textarea 
                 name="message" 
                 placeholder="Message (tell us about your skills or interest)" 
-                className="md:col-span-2 p-3 border rounded-md"
+                className="md:col-span-2 p-3 border rounded-md border-inputBorder rounded-md placeholder: text-placeholder bg-bgSecondary focus:outline-none"
                 value={userCredentials.message}
                 onChange={handleChange}
             >
             </textarea>
             <div className="md:col-span-2 flex gap-4">
                 <button class="px-4 py-3 bg-indigo-600 text-white rounded-md">Send Application</button>
-                <a href="index.html" className="px-4 py-3 border rounded-md">Back</a>
+                <a href="index.html" className="px-4 py-3 border rounded-md border-borderColor text-primaryText">Back</a>
             </div>
         </form>
     )

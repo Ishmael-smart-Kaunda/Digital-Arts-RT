@@ -1,4 +1,90 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme{
+       --color-bgPrimary: var(--background1);
+       --color-bgSecondary:var(--background2);
+       
+       --color-bgSpecial1:var(--background3);
+       --color-bgSpecial2:var(--background4);
+       --color-bgSpecial3:var(--background5);
+       --color-bgSpecial4:var(--background6);
+       
+       --color-borderColor:var(--borderColor);
+      
+       
+      
+
+       --color-primaryText: var(--text1);
+       --color-secondaryText: var(--text2);
+       
+       --color-specialText1: var(--text3);
+       --color-specialText2: var(--text4);
+
+       --color-placeholder:var(--placeholder);
+       --color-inputBorder:var(--inputborder);
+       --color-inputBg:var(--inputBg);
+
+       --color-specialText3: var(--text5);
+       --color-specialText4: var(--text6);
+
+       
+}
+
+:root{
+     --background1:#ffffff99;
+     --background2:#fff;
+
+     --background4:rgba(238, 242, 255, 1);
+     --background5:rgba(225, 251, 235, 1);
+     --background6:rgba(236, 253, 245, 1);
+     --background7:#eef2ff;
+     
+
+
+     --text1:#0c1220;
+     --text2:#747a81;
+     --text3:#7d7e80de;
+     
+     --text4:#f1f5f9;
+     --text5:#4f46e5;
+
+     --background3:#fff;
+     --textP:#333;
+     --textList:#a09999d8;
+     --borderColor: #e0d8d8;
+
+     --inputborder: rgba(148, 163, 184, 0.3);
+     --placeholder:rgb(56, 55, 55);
+     --inputBg: #0f121b;
+
+    
+}
+
+.dark{
+    --background1:#0f172a;
+    --background2:#1e293b;
+    
+    --background4:rgba(67, 56, 202, 0.15);
+    --background5:rgba(120, 53, 15, 0.15);
+    --background6:rgba(6, 78, 59, 0.15);
+    --background7:#eef2ff;
+
+    --text1:#ffffff;
+    --text2:#cfd2d4;
+    --text3:#868a8d;
+    --text4:#f1f5f9;
+    --text5:#818cf8;
+
+    --borderColor: #2f384d;
+    
+    --inputborder: rgba(148, 163, 184, 0.3);
+    --placeholder:#94a3b8;
+    --inputBg: #0f172a;
+    
+
+}
+
 .dot{
     display: block;
     background-color: rgba(61, 58, 58, 0.911);

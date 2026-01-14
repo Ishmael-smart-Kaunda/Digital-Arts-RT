@@ -15,7 +15,7 @@ export default function Header({pageNmae, data}){
      let imgSrc=slideImgs[index].src
      let imgAlt=slideImgs[index].alt
 
-     const slideDots =slideImgs.map((dot, i)=>{return <span className={`dot ${i===index ? 'border border-white border-2': ''} `}></span>})
+     const slideDots =slideImgs.map((dot, i)=>{return <span className={` size-4 rounded-full ${i===index ? 'bg-amber-600': 'bg-white transition-colors 200'} `}></span>})
      {/*next index */}
      function getNextIndex(prevIndex){
          return(prevIndex+1)%slideImgs.length

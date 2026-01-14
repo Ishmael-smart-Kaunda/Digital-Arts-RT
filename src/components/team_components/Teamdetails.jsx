@@ -12,9 +12,9 @@ export default function Teamdeets() {
 
     return(
         <main class="max-w-6xl mx-auto px-6 py-12 pt-24">
-            <h1 class="text-3xl font-bold mb-6 text-secondaryText transition-colors duration-300">Founders & Instructors</h1>
+            <h1 class="text-3xl font-bold mb-6 text-secondaryText ">Founders & Instructors</h1>
 
-            <p class="text-secondaryText mb-6 transition-colors duration-300">We are building a small founding team of established creatives. Below are the founding roles — update with real bios and links when you have them.</p>
+            <p class="text-secondaryText mb-6 ">We are building a small founding team of established creatives. Below are the founding roles — update with real bios and links when you have them.</p>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 

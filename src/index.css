@@ -12,9 +12,6 @@
        
        --color-borderColor:var(--borderColor);
       
-       
-      
-
        --color-primaryText: var(--text1);
        --color-secondaryText: var(--text2);
        
@@ -26,9 +23,7 @@
        --color-inputBg:var(--inputBg);
 
        --color-specialText3: var(--text5);
-       --color-specialText4: var(--text6);
-
-       
+       --color-specialText4: var(--text6);    
 }
 
 :root{
@@ -42,11 +37,11 @@
      
 
 
-     --text1:#0c1220;
+     --text1:#35373b;
      --text2:#747a81;
      --text3:#7d7e80de;
      
-     --text4:#f1f5f9;
+     --text4:#e0e2e4;
      --text5:#4f46e5;
 
      --background3:#fff;
@@ -71,7 +66,7 @@
     --background7:#eef2ff;
 
     --text1:#ffffff;
-    --text2:#cfd2d4;
+    --text2:#b2b8bd;
     --text3:#868a8d;
     --text4:#f1f5f9;
     --text5:#818cf8;
@@ -81,10 +76,13 @@
     --inputborder: rgba(148, 163, 184, 0.3);
     --placeholder:#94a3b8;
     --inputBg: #0f172a;
-    
-
 }
-
+body{
+     overflow-x: hidden;
+}
+*{
+    transition: all 0.3s;
+}
 .dot{
     display: block;
     background-color: rgba(61, 58, 58, 0.911);

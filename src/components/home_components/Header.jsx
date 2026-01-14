@@ -68,7 +68,7 @@ function Hhero(){
               </a>
               <a href="contact.html" className="inline-flex items-center gap-2 px-5 py-3 rounded-md border border-white/30 text-white/90 backdrop-blur-sm">
                 Join a Workshop
-              </a>text-sm text-slate-400 mt-2
+              </a>
             </div>
 
             <div className="max-w-md p-4 rounded-md backdrop-blur-sm inline-block mx-auto md:mx-0">

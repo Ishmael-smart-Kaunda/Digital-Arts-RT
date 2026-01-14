@@ -13,17 +13,17 @@ export default function () {
                     <h5 className="font-semibold">Follow Us</h5>
                     <div  className="mt-3 flex flex-row items-center gap-4">
                         <a href="https://web.facebook.com/profile.php?id=61586510541142" >
-                           <FaFacebook className="h-[24px] w-[24px] transition-transform transition-transform duration-500 ease-in-out hover:scale-110" />
+                           <FaFacebook className="h-[24px] w-[24px] transition-transform  hover:scale-110" />
                         </a>
                        < a href="https://www.instagram.com/digitalartacademymw/">
-                           <FaInstagram className="h-[24px] w-[24px] transition-transform transition-transform duration-500 ease-in-out hover:scale-110" />
+                           <FaInstagram className="h-[24px] w-[24px] transition-transform hover:scale-110" />
                        </a>
                        <a href="https://www.tiktok.com/@digitalartsacademy.mw?lang=en">
-                        <SiTiktok className="h-[23px] w-[23px] transition-transform transition-transform duration-500 ease-in-out hover:scale-110"  />
+                        <SiTiktok className="h-[23px] w-[23px] transition-transform  hover:scale-110"  />
                        </a>
                            
                         <a href="https://www.youtube.com/channel/UC-tcfLP7qf_sDgAmStUSjWw">
-                           <FaYoutube className="h-[25px] w-[25px] transition-transform duration-500 ease-in-out hover:scale-110"  />
+                           <FaYoutube className="h-[25px] w-[25px] hover:scale-110"  />
                         </a>
                     </div>
                 </article>
@@ -33,10 +33,10 @@ export default function () {
 
                 <div>
                 <h5 class="font-semibold">Quick links</h5>
-                <ul class="mt-3 text-sm text-slate-300 space-y-2">
-                    <li className="hover:text-indigo-300 transition-colors duration-100"><a href="#courses">Courses</a></li>
-                    <li className="hover:text-indigo-300 transition-colors duration-100" ><a href="team.html">Team</a></li>
-                    <li className="hover:text-indigo-300 transition-colors duration-100" ><a href="contact.html">Contact</a></li>
+                <ul class="w-1/2 md:w-[fit-content] mt-3 text-sm text-slate-300 space-y-2">
+                    <li className="hover:text-indigo-300 "><a href="#courses">Courses</a></li>
+                    <li className="hover:text-indigo-300 " ><a href="team.html">Team</a></li>
+                    <li className="hover:text-indigo-300 " ><a href="contact.html">Contact</a></li>
                 </ul>
                 </div>
 

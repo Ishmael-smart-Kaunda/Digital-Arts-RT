@@ -9,7 +9,7 @@ export default function FAQuestions(){
     return(
               <>
                  <section className=" max-w-6xl mx-auto px-6 pb-12">
-                     <div className="bg-bgPrimaryForm rounded-2xl shadow card-shadow border border-borderColor p-6 transition-colors duration-300">
+                     <div className="bg-bgPrimaryForm rounded-2xl shadow card-shadow border border-borderColor p-6 ">
                        <div className="flex items-center justify-between flex-wrap gap-3">
                          <div>
                             <p className="text-sm text-indigo-600 font-semibold uppercase">FAQ</p>

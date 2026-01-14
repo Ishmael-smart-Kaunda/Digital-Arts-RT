@@ -4,7 +4,7 @@
 
 export default function Coursetrack({badges, courseImg, title, description, takeAways, tools}) {
     return (
-        <article id="drawing" class="course-card bg-bgSecondary rounded-xl shadow hover:shadow-lg p-5 border border-borderColor transition-colors duration-300">
+        <article id="drawing" class="course-card bg-bgSecondary rounded-xl shadow hover:shadow-lg p-5 border border-borderColor">
           <div class="relative h-40 rounded-md overflow-hidden bg-slate-900">
             <img src={`./public/images/${courseImg}`} alt="Digital drawing students" class="w-full h-full object-cover opacity-90"></img>
             <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-black/70"></div>
@@ -13,9 +13,9 @@ export default function Coursetrack({badges, courseImg, title, description, take
               <span class="px-3 py-1 rounded-full bg-white/15 text-xs">{badges.type}</span>
             </div>
           </div>
-          <h3 class="mt-4 font-semibold text-lg text-primaryText transition-colors duration-300">{title}</h3>
-          <p class="mt-2 text-sm text-secondaryText transition-colors duration-300"> {description} </p>
-          <ul class="mt-3 text-sm text-secondaryText space-y-2 list-disc pl-5 transition-colors duration-300">
+          <h3 class="mt-4 font-semibold text-lg text-primaryText ">{title}</h3>
+          <p class="mt-2 text-sm text-secondaryText "> {description} </p>
+          <ul class="mt-3 text-sm text-secondaryText space-y-2 list-disc pl-5 ">
             <li> {takeAways.takeAway1} </li>
             <li>{takeAways.takeAway2} </li>
             <li>{takeAways.takeAway3} </li>

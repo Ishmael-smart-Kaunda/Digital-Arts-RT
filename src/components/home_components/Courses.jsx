@@ -2,7 +2,7 @@
 export default function Courses({data}) {
     return (
         
-        <article class=" course-card bg-bgSecondary rounded-xl shadow hover:shadow-lg transition p-5">
+        <article class=" course-card bg-bgSecondary rounded-xl shadow hover:shadow-lg  p-5">
                     <div class="relative h-40 rounded-md overflow-hidden ">
                         <img src={`./public/images/${data.courseImg}`} class="w-full h-full object-cover opacity-90"></img>
                         <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/60"></div>

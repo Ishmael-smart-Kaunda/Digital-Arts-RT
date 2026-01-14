@@ -17,19 +17,32 @@ export default function Navbar() {
                                     </Link>
                             )
     const [open, setOpen]=useState(false)
-    const [dark,setDark]=useState(false)
+    const [theme, setTheme]=useState(localStorage.getItem('theme'))
 
     function toggleTheme(){
-        setDark(!dark);
-        localStorage.setItem('theme', !dark? 'dark': 'light');
-        document.documentElement.classList.toggle('dark');
-        
+        if(theme==='light'){
+            setTheme('dark')
+        }
+        if(theme==='dark'){
+            setTheme('light')
+        }   
     }
- 
+    useEffect(()=>{
+        localStorage.setItem('theme', theme)
+        const currentTheme=localStorage.getItem('theme')
+        if(currentTheme==='light'){
+            document.documentElement.classList.add(currentTheme)
+            document.documentElement.classList.remove('dark')
+        }
+        if(currentTheme==='dark'){
+            document.documentElement.classList.add(currentTheme)
+            document.documentElement.classList.remove('light')
+        }
+    },[theme])
 
     return(
             <>
-                <header className={`fixed top-0 left-0 right-0 z-50 bg-bgPrimary backdrop-blur-sm shadow-sm ${dark? 'border-b border-white/10': ''} transition-colors duration-300`}>
+                <header className={`fixed top-0 left-0 right-0 z-50 bg-bgPrimary backdrop-blur-sm shadow-sm ${theme==='dark'? 'border-b border-white/8': 'border-b border-white/3'}`}>
                     <div className="max-w-6xl mx-auto flex items-center justify-between px-5 py-3">
                         <a href="index.html" className="flex items-center gap-3">
                             <img src={Logo} alt="Digital Arts Academy MW logo" className="w-10 h-10 rounded-md object-contain ring-2 ring-black/10 bg-white"></img>
@@ -45,22 +58,22 @@ export default function Navbar() {
 
                         {/* navigation menu for mobile devices */}
                         {open && (
-                            <nav className={`md:hidden flex flex-col items-center gap-1 absolute ${dark? 'border-b border-white/10': ''} top-15 left-0 transition px-5 py-4 space-y-2 bg-white/70 backdrop-blur-sm shadow-sm w-full transition-colors duration-300`}>
+                            <nav className={`md:hidden flex flex-col items-center gap-1 absolute ${theme==='dark'? 'border-b border-white/10': ''} top-15 left-0 transition px-5 py-4 space-y-2 bg-white/70 backdrop-blur-sm shadow-sm w-full transition-colors duration-300`}>
                               {Links}
                             </nav>
                           )
                         }
 
-                        <button onClick={toggleTheme} id="dark-toggle" className={`hidden md:flex items-center justify-center size-10 rounded-md ring-1 ring-slate-600 ${dark ?'hover:bg-slate-700 ring-slate-100':''} hover:bg-slate-100 transition-colors`} aria-label="Toggle dark mode">
-                           { dark ?<FiSun className="text-white"/>:<FiMoon /> }
+                        <button onClick={toggleTheme} id="dark-toggle" className={`hidden md:flex items-center justify-center size-10 rounded-md ring-1 ring-slate-600 ${theme==='dark' ?'hover:bg-slate-700 ring-slate-100':''} hover:bg-slate-100 transition-colors`} aria-label="Toggle dark mode">
+                           { theme==='light' ?<FiMoon />:<FiSun className="text-white"/> }
                       </button>
 
                         <div class="md:hidden flex items-center gap-2">
-                            <button onClick={toggleTheme} id="dark-toggle-mobile" className={`p-2 rounded-md ring-1 ring-slate-600 ${dark ?'hover:bg-slate-700 ring-slate-100 transition-colors duration-300':''} hover:bg-slate-100 transition-colors duration-300`} aria-label="Toggle dark mode">
-                              { dark ?<FiSun className="text-white" /> :<FiMoon/>}
+                            <button onClick={toggleTheme} id="dark-toggle-mobile" className={`p-2 rounded-md ring-1 ring-slate-600 ${theme==='dark' ?'hover:bg-slate-700 ring-slate-100 transition-colors duration-300':''} hover:bg-slate-100 transition-colors duration-300`} aria-label="Toggle dark mode">
+                              { theme==='light' ?<FiMoon />:<FiSun className="text-white" /> }
                             </button>
-                            <button id="mobile-menu-btn" onClick={()=>setOpen(!open)} className={`p-2 rounded-md ring-1 ring-slate-200 ${dark?'hover:bg-slate-700':''} hover:bg-slate-100 transition-colors duration-300`}>
-                                {open ? (<FiX className={`${dark?'text-white':''} hover:text-red-700`}/>) : <FiMenu className={`${dark?'text-white hover:text-white':''} hover:text-gray-700`}/>}
+                            <button id="mobile-menu-btn" onClick={()=>setOpen(!open)} className={`p-2 rounded-md ring-1 ring-slate-200 ${theme==='dark'?'hover:bg-slate-700':''} hover:bg-slate-100 transition-colors duration-300`}>
+                                {open ? (<FiX className={`${theme==='dark'?'text-white':''} hover:text-red-700`}/>) : <FiMenu className={`${theme==='dark'?'text-white hover:text-white':''} hover:text-gray-700`}/>}
                           </button>
                         </div>
                     </div>

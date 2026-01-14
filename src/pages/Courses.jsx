@@ -6,7 +6,7 @@ import Quickfacts from "../components/courses_components/Quickfacts"
 import Deliverables from "../components/courses_components/Deliverables"
 
 {/*import FAQ from "../components/courses_components/FAQ"*/}
-import FAQuestions from "../components/courses_components/frequent_questions"
+import FAQuestions from "../components/courses_components/FrequentQuestions"
 
 import CallAction from "../components/CallAction"
 import Footer from "../components/Footer"
@@ -30,19 +30,19 @@ export default function Courses() {
     })
 
     return (
-        <div className="bg-bgPrimary transition-colors duration-300">
+        <div className="bg-bgPrimary">
             <Header pageNmae='course' data={headerData} />
 
             <Quickfacts />
 
-            <section id="tracks" className="max-w-6xl mx-auto px-6 pb-6 transition-colors duration-300">
+            <section id="tracks" className="max-w-6xl mx-auto px-6 pb-6 ">
                 <div className="flex items-center justify-between mb-6">
                     <div>
                     <p className="text-sm text-indigo-600 font-semibold uppercase">Pick your path</p>
-                    <h2 className="text-2xl text-primaryText md:text-3xl font-bold transition-colors duration-300">Course tracks</h2>
-                    <p className="text-secondaryText mt-1 transition-colors duration-300">Structured, practical programs with a tangible deliverable.</p>
+                    <h2 className="text-2xl text-primaryText md:text-3xl font-bold ">Course tracks</h2>
+                    <p className="text-secondaryText mt-1 ">Structured, practical programs with a tangible deliverable.</p>
                     </div>
-                    <a href="contact.html" className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-md bg-indigo-600 text-white text-sm hover:bg-indigo-700 transition-colors duration-300">Talk to us</a>
+                    <a href="contact.html" className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-md bg-indigo-600 text-white text-sm hover:bg-indigo-700 ">Talk to us</a>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

@@ -4,7 +4,7 @@ import Footer from "../components/Footer"
 
 export default function Team() {
     return (
-        <div className="bg-bgPrimary transition-colors duration-300">
+        <div className="bg-bgPrimary">
             <Teamdeets />
 
             <Footer />
